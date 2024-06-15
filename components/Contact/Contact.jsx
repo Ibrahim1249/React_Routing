@@ -1,11 +1,31 @@
-
-
-import React from 'react'
+import React from "react";
+import "./Contact.css"
 
 function Contact() {
   return (
-    <div>Contact</div>
-  )
+    <>
+      <form>
+        <input
+          name="name"
+          type="text"
+          class="feedback-input"
+          placeholder="Name"
+        />
+        <input
+          name="email"
+          type="text"
+          class="feedback-input"
+          placeholder="Email"
+        />
+        <textarea
+          name="text"
+          class="feedback-input"
+          placeholder="Comment"
+        ></textarea>
+        <input type="submit" value="SUBMIT" />
+      </form>
+    </>
+  );
 }
 
-export default Contact
+export default Contact;
